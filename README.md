@@ -28,7 +28,7 @@ the source documents.</li>
 
 <h2>Architectural Flow</h2>
 <ol>
-The engine follows a structured pipeline to move from raw data to a finished presentation:
+<b>The engine follows a structured pipeline to move from raw data to a finished presentation:</b>
 <li>Data Ingestion & Chunking: The system reads the local PDF/text documents and "intelligently
 chunks" the data into manageable pieces for the AI to process.</li>
 <li>Information Retrieval (RAG): Using Retrieval-Augmented Generation, the engine identifies and
