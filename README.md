@@ -87,5 +87,7 @@ sequential animations.</li>
 </ol>
 
 <h2>Commands</h2>
-1. pip install django google-generativeai python-pptx PyPDF2 langchain-text-splitters pdfplumber
-2. python manage.py runserver
+<ol>
+<li>pip install django google-generativeai python-pptx PyPDF2 langchain-text-splitters pdfplumber</li>
+<li>python manage.py runserver</li>
+</ol>
