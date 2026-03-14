@@ -43,12 +43,14 @@ sequential animations.</li>
 </ol>
 
 <h2>Tech Stack</h2>
-<b></b>Frontend</b> : HTML,CSS ,JavaScript ,Django Templates
-<b>Backend</b> : Python(Django)
-<b>AI Model</b> :  Ollama 
-<b>Document Processing</b> :  PyPDF2 ,pdfplumber
-<b>RAG / Processing Layer</b> :  LangChain
-<b>Slide Generator</b> : python-pptx
+<ul>
+<li><b>Frontend</b> : HTML,CSS ,JavaScript ,Django Templates</li>
+<li><b>Backend</b> : Python(Django)</li>
+<li><b>AI Model</b> :  Ollama </li>
+<li><b>Document Processing</b> :  PyPDF2 ,pdfplumber</li>
+<li><b>RAG / Processing Layer</b> :  LangChain</li>
+<li><b>Slide Generator</b> : python-pptx</li>
+</ul>
 
 <h2>Final Architecture</h2>
 <ol>
