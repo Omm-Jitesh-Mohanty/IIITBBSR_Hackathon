@@ -38,8 +38,50 @@ extracts the most relevant information from the chunks based on a user’s promp
 are needed and what content belongs on each.</li>
 <li>Content & Asset Generation: The system populates slides with text and can optionally use AI
 to generate relevant charts, graphs, or image placeholders.</li>
-
-  </ol>
-5. Programmatic Export: Finally, the engine uses an API (like the Google Slides API or a
+<li>Programmatic Export: Finally, the engine uses an API (like the Google Slides API or a
 PowerPoint library) to physically build the file, applying the 80s-themed formatting and
-sequential animations.
+sequential animations.</li>
+</ol>
+
+<h2>Tech Stack</h2>
+<b></b>Frontend</b> : HTML,CSS ,JavaScript ,Django Templates
+<b>Backend</b> : Python(Django)
+<b>AI Model</b> :  Ollama 
+<b>Document Processing</b> :  PyPDF2 ,pdfplumber
+<b>RAG / Processing Layer</b> :  LangChain
+<b>Slide Generator</b> : python-pptx
+
+<h2>Final Architecture</h2>
+<ol>
+<li>User</li>
+ 
+ 
+<li> Frontend (HTML + CSS + JS + Django Templates)</li>
+ 
+ 
+<li> File Upload (Django View)</li>
+ 
+ 
+<li> PDF Processing
+(PyPDF2 / pdfplumber)</li>
+ 
+ 
+<li> Text Chunking
+(LangChain TextSplitter)</li>
+ 
+ 
+<li> AI Processing
+(Gemini API)</li>
+ 
+ 
+<li> Slide Structure Generator</li>
+ 
+ 
+<li> PowerPoint Builder
+(python-pptx)</li>
+ 
+ 
+<li> Generated PPT File</li>
+ 
+ 
+<li> Download Button</li>
