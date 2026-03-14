@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mr. Clarke AI Briefing Generator</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+<!-- Animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<h1 class="title" data-aos="fade-down">Mr. Clarke AI Briefing Generator</h1>
+<p class="subtitle" data-aos="fade-up">Upload documents and generate intelligent presentations</p>
+
+<div class="glass-card" data-aos="zoom-in">
+
+<form method="POST" enctype="multipart/form-data" id="uploadForm">
+
+{% csrf_token %}
+
+<div class="drop-area" id="dropArea">
+<p>Drag & Drop Files Here</p>
+<span>or</span>
+<input type="file" name="documents" id="fileInput" multiple required>
+</div>
+
+<textarea name="question" placeholder="Ask your briefing question..." required></textarea>
+
+<button type="submit">Generate Presentation</button>
+
+</form>
+
+<!-- AI loader -->
+<div class="loader" id="loader">
+<div class="spinner"></div>
+<p>AI is generating your briefing...</p>
+</div>
+
+<div class="progress-container" id="progressContainer">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+</div>
+
+{% if output %}
+
+<div class="answer-box" data-aos="fade-up">
+<h2>Generated Answer</h2>
+<pre id="aiOutput">{{ output }}</pre>
+</div>
+
+{% endif %}
+
+{% if ppt_file %}
+
+<a class="download-btn" href="/{{ ppt_file }}" download data-aos="zoom-in">
+Download Presentation
+</a>
+
+{% endif %}
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
+
+
+
