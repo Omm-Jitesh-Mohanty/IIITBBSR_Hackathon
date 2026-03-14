@@ -1,5 +1,4 @@
-# IIITBBSR_Hackathon
-This folder contains all works of iit hackathon.
+# TEAM NEUROHACK
 
 <h1>CLARKE ENGINE — Upside Down Archive</h1>
 <h2>📁 Project Overview</h2>
