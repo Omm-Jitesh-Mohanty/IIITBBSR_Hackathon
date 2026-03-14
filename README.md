@@ -89,7 +89,7 @@ sequential animations.</li>
 </ol>
 
 <h2>Commands</h2>
-<ol>
+
 ```
  pip install django google-generativeai python-pptx PyPDF2 langchain-text-splitters pdfplumber
  ```
